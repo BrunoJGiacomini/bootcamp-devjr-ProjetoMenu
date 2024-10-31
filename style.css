@@ -270,7 +270,10 @@
 
 }
 .input input:focus{
-    background-color: #E8F0FD;
+    
+    
+    box-shadow: 0 0 5px rgba(0, 105, 217, 1); /*#E8F0FD;*/
+
 }
 
 .button{
