@@ -24,19 +24,39 @@
                 <div class="title2">
                     Prato Principal
                 </div>
-                <div class="title3">Todos os pratos acompanham arroz,feijão e a sobremesa do dia.</div>
+                <div class="title3">
+                    Todos os pratos acompanham arroz,feijão e a sobremesa do dia.
+                </div>
                 <div class="flex-header">
                     <div class="col1">
                         <img src="bife.jpg" alt="Foto de um prato de Bife com Batatas">
                         Bife com batata
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty" 
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
                     <div class="col2">
                         <img src="coxa.jpg" alt="Foto de um prato de Coxa de Frango Crocante">
                         Coxa de Frango Crocante
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty" 
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
                     <div class="col3">
                         <img src="panela.jpg" alt="Foto de um prato de Carne de Panela">
                         Carne de Panela
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty" 
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,14 +68,32 @@
                         <div class="col4">
                             <img src="farofa.jpg" alt="Foto de uma farofa">
                             Farofa
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty" 
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
                         </div>
                         <div class="col5">
                            <img src="salad.jpg" alt="Foto de um prato de salada">
                             Salada
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty" 
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
                         </div>
                         <div class="col6">
                             <img src="torresmo.jpg" alt="Foto de um prato de torresmo">
                             Torresmo
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty" 
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +105,7 @@
                             <input type="text" id="phone" placeholder="Digite o seu telefone"></input>
 
                             <script src="jquery-3.7.1.min.js"></script>
-                            <script src="jquery.mask.min.js"></script>
+                            <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 
                             <script>
                                 $("#phone").mask("(99) 99999-9999");
@@ -77,17 +115,19 @@
                         </div>
                     </div>
                     <div class="button">
-                        <button> Calcular</button>
+                        <button onclick="calc()"> Calcular</button>
                     </div>
                     
-                        <div class="footer">
-                            Preço final R$ 33,00
+                        <div class="output">
+                            
                         </div>
 
 
     </div>
 </div>
-
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="quantity.js"></script>
+    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="javascript.js"></script>
 </body>
 </html>
