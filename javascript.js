@@ -20,8 +20,8 @@ function calc(){
         var id = input.id;
 
         output.innerHTML += `Prato: ${prods[id-1].name} - Preço unitário: ${prods[id-1].price} - Quantidade: ${input.value} </br>`
-        total            += prods[id-1].price * input.value
+        total            += prods[id-1].price * parseFloat(input.value);
     }
 
-    output.innerHTML += `<h2>Total: ${total}</h2>`;
+    output.innerHTML += `<h2>Preço Final: R$ ${total.toFixed(2)}</h2>`;
 }
